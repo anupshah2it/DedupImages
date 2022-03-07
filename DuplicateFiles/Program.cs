@@ -65,8 +65,8 @@ namespace DuplicateFiles
 			//delete duplicate files
 			if (ToDelete.Count > 0)
 			{
-				Console.WriteLine("Press C to continue with delete");
-				Console.WriteLine("Press the Escape (Esc) key to quit: \n");
+				//Console.WriteLine("Press C to continue with delete");
+				//Console.WriteLine("Press the Escape (Esc) key to quit: \n");
 				//do
 				//{
 				//	cki = Console.ReadKey();
@@ -82,8 +82,8 @@ namespace DuplicateFiles
 			else
 			{
 				Console.WriteLine("No files to delete");
-				Console.ReadLine();
 			}
+			Console.ReadLine();
 		}
 	}
 }
