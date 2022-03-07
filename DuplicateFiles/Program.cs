@@ -67,17 +67,18 @@ namespace DuplicateFiles
 			{
 				Console.WriteLine("Press C to continue with delete");
 				Console.WriteLine("Press the Escape (Esc) key to quit: \n");
-				//do
-				//{
-				//	cki = Console.ReadKey();
-				//	Console.WriteLine(" --- You pressed {0}\n", cki.Key.ToString());
-				//	if (cki.Key == ConsoleKey.C)
-				//{
-				Console.WriteLine("Deleting files...");
-				ToDelete.ForEach(File.Delete);
-				Console.WriteLine("Files are deleted successfully");
-				//	Console.WriteLine("Press the Escape (Esc) key to quit: \n");
-				//} while (cki.Key != ConsoleKey.Escape);
+				do
+				{
+					cki = Console.ReadKey();
+					Console.WriteLine(" --- You pressed {0}\n", cki.Key.ToString());
+					if (cki.Key == ConsoleKey.C)
+					{
+						Console.WriteLine("Deleting files...");
+						ToDelete.ForEach(File.Delete);
+						Console.WriteLine("Files are deleted successfully");
+						Console.WriteLine("Press the Escape (Esc) key to quit: \n");
+					}
+				} while (cki.Key != ConsoleKey.Escape);
 			}
 			else
 			{
