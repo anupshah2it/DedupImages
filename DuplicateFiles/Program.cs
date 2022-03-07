@@ -16,10 +16,10 @@ namespace DuplicateFiles
 			ConsoleKeyInfo cki;
 			double totalSize = 0;
 			//pass directory path as argument to command line
-			//if (args.Length > 0)
-			//    path = args[0] as string;
-			//else
-			path = @"E:\IPhoneXR\Photos\119APPLE";
+			if (args.Length > 0)
+				path = args[0] as string;
+			else
+				path = @"E:\IPhoneXR\Photos\";
 
 			//Get all files from given directory
 			var fileLists = Directory.GetFiles(path);
