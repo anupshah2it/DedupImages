@@ -82,8 +82,8 @@ namespace DuplicateFiles
 			else
 			{
 				Console.WriteLine("No files to delete");
+				Console.ReadLine();
 			}
-			Console.ReadLine();
 		}
 	}
 }
